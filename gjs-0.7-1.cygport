@@ -1,0 +1,14 @@
+inherit gnome2
+
+DESCRIPTION="GNOME JavaScript bindings based on Mozilla Spidermonkey"
+HOMEPAGE="http://live.gnome.org/Gjs"
+
+PATCH_URI="
+	0.7-module-suffix.patch
+	0.7-no-undefined.patch
+"
+
+PKG_NAMES="${PN} libgjs0 libgjs-devel"
+gjs_CONTENTS="usr/bin/gjs* usr/share/doc/"
+libgjs0_CONTENTS="usr/bin/*-0.dll usr/lib/gjs-1.0/ usr/share/gjs-1.0/"
+libgjs_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
