@@ -1,0 +1,21 @@
+--- origsrc/gjs-1.30.0/examples/clutter.js	2011-06-09 17:31:56.000000000 -0500
++++ src/gjs-1.30.0/examples/clutter.js	2011-12-11 03:17:59.047223700 -0600
+@@ -1,6 +1,6 @@
+ const Clutter = imports.gi.Clutter;
+ 
+-Clutter.init(0, null);
++Clutter.init(null, null);
+ 
+ let stage = new Clutter.Stage();
+ 
+--- origsrc/gjs-1.30.0/examples/gtk.js	2011-06-09 17:31:56.000000000 -0500
++++ src/gjs-1.30.0/examples/gtk.js	2011-12-11 03:16:56.738117400 -0600
+@@ -24,7 +24,7 @@ function onDestroy(widget) {
+     Gtk.main_quit();
+ }
+ 
+-Gtk.init(0, null);
++Gtk.init(null, null);
+ 
+ // create a new window
+ let win = new Gtk.Window({ type: Gtk.WindowType.TOPLEVEL });

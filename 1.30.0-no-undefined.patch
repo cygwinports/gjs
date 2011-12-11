@@ -1,0 +1,10 @@
+--- origsrc/gjs-1.30.0/Makefile-gjs-dbus.am	2011-07-25 12:53:59.000000000 -0500
++++ src/gjs-1.30.0/Makefile-gjs-dbus.am	2011-12-11 03:31:00.728778500 -0600
+@@ -37,6 +37,7 @@ libgjs_gdbus_la_SOURCES = 	\
+ 
+ libgjs_gdbus_la_CPPFLAGS = $(AM_CPPFLAGS) -DG_LOG_DOMAIN=\"GjsGDBus\"
+ libgjs_gdbus_la_CFLAGS = $(AM_CFLAGS) $(GJS_GDBUS_CFLAGS)
++libgjs_gdbus_la_LDFLAGS = -no-undefined
+ libgjs_gdbus_la_LIBADD = $(GJS_GDBUS_LIBS)
+ 
+ -include $(INTROSPECTION_MAKEFILE)
