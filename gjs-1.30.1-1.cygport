@@ -15,3 +15,5 @@ libgjs0_CONTENTS="usr/bin/*-0.dll usr/lib/gjs* usr/share/gjs-1.0/"
 libgjs_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
 
 CYGCONF_ARGS="--with-js-package=mozjs185"
+
+KEEP_LA_FILES="none"

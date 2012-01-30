@@ -1,5 +1,5 @@
 category: Gnome Interpreters
-requires: libgjs0 libdbus1-devel libdbus-glib_1-devel libgirepository1.0-devel libglib2.0-devel gettext libmozjs185-devel
+requires: libgjs0 libdbus1-devel libgirepository1.0-devel libglib2.0-devel libmozjs185-devel
 external-source: gjs
 sdesc: "GNOME JavaScript interpreter library (development)"
 ldesc: "Gjs is a Javascript binding for GNOME, based on Spidermonkey 
