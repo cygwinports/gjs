@@ -1,8 +1,0 @@
---- origsrc/gjs-1.30.0/Makefile-test.am	2011-07-25 12:54:00.000000000 -0500
-+++ src/gjs-1.30.0/Makefile-test.am	2011-12-11 02:24:41.748957200 -0600
-@@ -5,1 +5,1 @@ RUN_WITH_DBUS = ${top_srcdir}/test/run-w
--TEST_PROGS += gjs-tests
-+TEST_PROGS += gjs-tests$(EXEEXT)
-@@ -40,1 +40,1 @@ gjstest.h.stamp : scripts/make-tests $(g
--TEST_PROGS += gjs-unit
-+TEST_PROGS += gjs-unit$(EXEEXT)

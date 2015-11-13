@@ -1,0 +1,11 @@
+--- origsrc/gjs-1.38.1/Makefile-test.am	2013-09-24 21:00:21.000000000 -0500
++++ src/gjs-1.38.1/Makefile-test.am	2014-03-12 18:40:55.480827000 -0500
+@@ -6,7 +6,7 @@ RUN_WITH_DBUS = ${top_srcdir}/test/run-w
+ GTESTER = ${TESTS_ENVIRONMENT} ${RUN_WITH_DBUS} gtester
+ 
+ ########################################################################
+-TEST_PROGS += gjs-tests
++TEST_PROGS += gjs-tests$(EXEEXT)
+ 
+ gjs_tests_CFLAGS =				\
+ 	$(AM_CFLAGS)				\

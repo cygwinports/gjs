@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gjs"
-VERSION=1.36.1
+VERSION=1.44.0
 RELEASE=1
 CATEGORY="Interpreters"
 SUMMARY="GNOME JavaScript interpreter"
@@ -9,16 +9,18 @@ DESCRIPTION="Gjs is a Javascript binding for GNOME, based on Spidermonkey
 JavaScript engine and the GObject Introspection framework."
 HOMEPAGE="http://live.gnome.org/Gjs"
 
-PATCH_URI="1.30.0-exeext.patch"
+PATCH_URI="
+	1.38.1-exeext.patch
+	1.43.3-cygwin-wchar_t.patch
+	1.43.3-no-undefined.patch
+"
 
 PKG_NAMES="${NAME} libgjs0 libgjs-devel"
 gjs_CONTENTS="usr/bin/gjs* usr/share/doc/"
 libgjs0_CATEGORY="Libs"
 libgjs0_REQUIRES="gnome-js-common girepository-GLib2.0"
 libgjs0_SUMMARY="${SUMMARY} library (runtime)"
-libgjs0_CONTENTS="usr/bin/*-0.dll usr/lib/gjs* usr/share/gjs-1.0/"
+libgjs0_CONTENTS="usr/bin/*-0.dll usr/lib/gjs*"
 libgjs_devel_CATEGORY="Libs"
 libgjs_devel_SUMMARY="${SUMMARY} library (development)"
 libgjs_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/"
-
-CYGCONF_ARGS="--with-js-package=mozjs185"
